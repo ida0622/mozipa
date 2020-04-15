@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mozipa</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+  <nav>
+      
+       <% if user_signed_in? %>
+    <ul class="nav nav-tabs pull-right ">
+            <li role="presentation"><%= link_to 'Home', user_path(current_user.id) %></li>
+            <li role="presentation"><%= link_to 'Users', users_path %></li>
+            <li role="presentation"><%= link_to 'Boards' , boards_path %></li>
+            <li role="presentation"><%= link_to 'logout', destroy_user_session_path, method: :delete %></li>
+          </ul>
+        <% else %>
+        <ul class="nav nav-tabs pull-right">
+            <li role="presentation"><%= link_to 'Home', home_path %></li>
+            <li role="presentation"><%= link_to 'About', about_path %></li>
+            <li role="presentation"><%= link_to 'sign up', new_user_registration_path %></li>
+            <li role="presentation"><%= link_to 'login', new_user_session_path %></li>
+            </ul>
+            <% end %>
+  </nav>
+</header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </body>
+</html>
