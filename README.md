@@ -1,24 +1,30 @@
-# README
+# サイト名：mozipa
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+サイトで自分の目的に合ったフレンドを見つける
 
-Things you may want to cover:
+### サイトテーマ
+自分の時間を大事にする
 
-* Ruby version
+### テーマを選んだ理由
+ゲームをする際「文字パ」と呼ばれるサイトで人を
+集めることを度々するのだが、ゲームを楽しくした
+い人や勝ちたい人で目的が分かれることがあります
+。今の文字パはそれらが混同しているので使いづら
+い。また、プロフィールを設定してもらいマッチン
+グした人がそれらの正当性を評価することで個人情
+報を偽っている人や一緒にゲームをしていて楽しく
+ない人にマッチングしない可能性を高くしたいと考
+えた。
 
-* System dependencies
+### ターゲットユーザ
+自分の居心地いい人とゲームしたい人
 
-* Configuration
+### 主な利用シーン
+今、新規の居心地のいいゲーム友達を募集したい。
 
-* Database creation
+## 設計書
 
-* Database initialization
+### 機能一覧
+https://docs.google.com/spreadsheets/d/1wLnKluzNOF6EB9JWhK1Dsu0zp14VVuiUijSU-f_ISus/edit#gid=0
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
